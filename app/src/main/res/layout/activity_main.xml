@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="336dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="44dp"
+        android:text="LOGIN/REGISTER"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/forgetpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/forgetpassword"
+        android:layout_width="336dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="357dp"
+        android:onClick="forgetpassword"
+        android:text="FORGET/RESET PASSWORD"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsignin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
